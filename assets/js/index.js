@@ -11,7 +11,7 @@ $("#update_user").submit(function (event) {
   });
 
   var request = {
-    url: `http://localhost:9999/api/users/${data.id}`,
+    url: `https://whispergallery.onrender.com/api/users/${data.id}`,
     method: "PUT",
     data: data,
   };
@@ -28,7 +28,7 @@ if (window.location.pathname == "/") {
   $ondelete.click(function () {
     var id = $(this).attr("data-id");
     var request = {
-      url: `http://localhost:9999/api/users/${id}`,
+      url: `https://whispergallery.onrender.com/api/users/${id}`,
       method: "DELETE",
     };
 
