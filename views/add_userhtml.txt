@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="container">
+          <div class="text-center">
+            <a href="/" class="nav-brand" style="font-size: 24px"
+              >Whisper Gallery<br />
+              <small style="font-size: 15px"
+                >shhhh! think twice before you whisper
+                <i class="fa-regular fa-face-grimace"></i>
+                just kidding! let it all out
+              </small></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main Section -->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+            <a href="/" style="color: #000"
+              ><i class="fa-solid fa-chevron-left"></i> All Whispers</a
+            >
+          </div>
+        </div>
+        <div class="form-title text-center">
+          <h2 class="text-dark cheeto">New Whisper</h2>
+          <span class="text-dark">(you can always not reveal the name)</span>
+          <span class="text-light">create your new whisper below</span>
+        </div>
+        <!-- form handling -->
+        <form method="post" id="update_user">
+          <div class="new_user">
+            <div class="form-group">
+              <label for="name" class="text-light cheeto"
+                >Whisper About (Subject):
+              </label>
+              <input type="hidden" name="id" value="" />
+              <input
+                type="text"
+                name="name"
+                placeholder="John Doe (or say anonymous)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="whisper" class="text-light cheeto">Whisper: </label>
+              <input
+                type="text"
+                name="whisper"
+                placeholder="Is a local Paracetamol dealer"
+              />
+            </div>
+            <div class="form-group">
+              <label for="confidence" class="text-light cheeto"
+                >Confidence Level:
+              </label>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-2"
+                  name="confidence"
+                  value="verylow"
+                />
+                <label for="radio-2" class="radio-label">very low </label>
+              </div>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-3"
+                  name="confidence"
+                  value="low"
+                />
+                <label for="radio-3" class="radio-label">low </label>
+              </div>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-4"
+                  name="confidence"
+                  value="medium"
+                />
+                <label for="radio-4" class="radio-label">medium </label>
+              </div>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-5"
+                  name="confidence"
+                  value="high"
+                />
+                <label for="radio-5" class="radio-label">high </label>
+              </div>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-6"
+                  name="confidence"
+                  value="veryhigh"
+                />
+                <label for="radio-6" class="radio-label">very high</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="status" class="text-light cheeto"
+                >Active or not?
+              </label>
+              <div class="radio inline">
+                <input type="radio" id="radio-7" name="status" value="active" />
+                <label for="radio-7" class="radio-label">active </label>
+              </div>
+              <div class="radio inline">
+                <input
+                  type="radio"
+                  id="radio-8"
+                  name="status"
+                  value="inactive"
+                />
+                <label for="radio-8" class="radio-label">inactive</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn text-dark update">
+                Whisper Now!
+                <i class="fa-solid fa-bullhorn" style="color: #000"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- /Main Section -->
+  </body>
+</html>

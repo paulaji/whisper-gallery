@@ -1,0 +1,23 @@
+# Logs
+logs/
+*.log
+
+# Environment variables
+config.env
+.env
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+
+# Misc
+.DS_Store
+Thumbs.db

@@ -1,0 +1,108 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Section -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex justify-between">
+      <div class="filter" style="padding: 10px; border: 3px solid">
+        <a href="/" style="color: #000"
+          ><i class="fa-solid fa-chevron-left"></i> All Whispers</a
+        >
+      </div>
+    </div>
+    <div class="form-title text-center">
+      <h2 class="text-dark cheeto">Re-Whisper</h2>
+      <span class="text-dark"
+        >(oh so now you want to re-whisper (edit your whisper) ?)</span
+      >
+    </div>
+    <!-- include form -->
+    <!-- form handling -->
+    <form method="post" id="update_user">
+      <div class="new_user">
+        <div class="form-group">
+          <label for="name" class="text-light cheeto"
+            >Whisper About (Subject):
+          </label>
+          <input type="hidden" name="id" value="" />
+          <input
+            type="text"
+            name="name"
+            placeholder="John Doe (or say anonymous)"
+          />
+        </div>
+        <div class="form-group">
+          <label for="whisper" class="text-light cheeto">Whisper: </label>
+          <input
+            type="text"
+            name="whisper"
+            placeholder="Is a local Paracetamol dealer"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confidence" class="text-light cheeto"
+            >Confidence Level:
+          </label>
+          <div class="radio inline">
+            <input
+              type="radio"
+              id="radio-2"
+              name="confidence"
+              value="verylow"
+            />
+            <label for="radio-2" class="radio-label">very low </label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-3" name="confidence" value="low" />
+            <label for="radio-3" class="radio-label">low </label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-4" name="confidence" value="medium" />
+            <label for="radio-4" class="radio-label">medium </label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-5" name="confidence" value="high" />
+            <label for="radio-5" class="radio-label">high </label>
+          </div>
+          <div class="radio inline">
+            <input
+              type="radio"
+              id="radio-6"
+              name="confidence"
+              value="veryhigh"
+            />
+            <label for="radio-6" class="radio-label">very high</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="status" class="text-light cheeto">Active or not? </label>
+          <div class="radio inline">
+            <input type="radio" id="radio-7" name="status" value="active" />
+            <label for="radio-7" class="radio-label">active </label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-8" name="status" value="inactive" />
+            <label for="radio-8" class="radio-label">inactive</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn text-dark update">
+            Re-Whisper!
+            <i class="fa-solid fa-bullhorn" style="color: #000">
+              <small style="font-size: 10px">
+                (you double sure buddy?)
+              </small></i
+            >
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+<!-- /Main Section -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

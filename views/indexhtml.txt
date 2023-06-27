@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="container">
+          <div class="text-center">
+            <a href="/" class="nav-brand"
+              >Whisper Gallery<br />
+              <i
+                class="fa-regular fa-face-laugh-squint"
+                style="font-size: 15px"
+              ></i>
+              /
+              <i
+                class="fa-regular fa-face-surprise"
+                style="font-size: 15px"
+              ></i>
+              /
+              <i class="fa-regular fa-face-sad-cry" style="font-size: 15px"></i>
+              /
+              <i class="fa-regular fa-face-angry" style="font-size: 15px"></i> /
+              <i
+                class="fa-regular fa-face-grin-wink"
+                style="font-size: 15px"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main Section -->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <a href="/add-user" class="border-shadow">
+            <span class="text-gradient"
+              >+ New Whisper <i class="fa-solid fa-bullhorn"></i
+            ></span>
+          </a>
+        </div>
+        <!-- form handling -->
+        <form action="/" method="post">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>ID</th>
+                <th>Whisper Subject</th>
+                <th>The Whisper</th>
+                <th>Confidence Level</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Paul</td>
+                <td>Paul is planning to buy a Porsche 911</td>
+                <td>low</td>
+                <td>Active</td>
+                <td>
+                  <a href="#" class="btn border-shadow update"
+                    ><span class="text-gradient"
+                      ><i
+                        class="fa-solid fa-pen-to-square"
+                        style="color: #000"
+                      ></i></span
+                  ></a>
+                  <a class="btn border-shadow delete"
+                    ><span class="text-gradient"
+                      ><i
+                        class="fa-solid fa-trash deldel"
+                        style="color: red"
+                      ></i></span
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </main>
+    <!-- /Main Section -->
+  </body>
+</html>

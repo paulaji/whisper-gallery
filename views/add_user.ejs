@@ -1,0 +1,35 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Section -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex justify-between">
+      <div class="filter" style="padding: 10px; border: 3px solid">
+        <a href="/" style="color: #000"
+          ><i class="fa-solid fa-chevron-left"></i> All Whispers</a
+        >
+      </div>
+    </div>
+    <div class="form-title text-center">
+      <span class="text-light"
+        >Think twice before you whisper!
+        <i class="fa-solid fa-face-grimace"></i> Just kidding! Let it all
+        out!!!</span
+      >
+    </div>
+    <div class="form-title text-center">
+      <h2 class="text-dark cheeto">New Whisper</h2>
+      <span class="text-dark">(you can always 'not' reveal the name)</span>
+      <span class="text-light">create your new whisper below</span>
+    </div>
+    <!-- include form -->
+    <%- include('include/_form') %>
+  </div>
+</main>
+<!-- /Main Section -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

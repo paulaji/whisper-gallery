@@ -1,0 +1,39 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Section -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex justify-between">
+      <a href="/add-user" class="border-shadow" style="border: 3px solid">
+        <span class="text-gradient"
+          >+ Whisper Something <i class="fa-solid fa-bullhorn"></i
+        ></span>
+      </a>
+    </div>
+    <!-- form handling -->
+    <form action="/" method="post">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Whisper Subject</th>
+            <th>The Whisper</th>
+            <th>Confidence Level</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- include('include/_show') %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</main>
+<!-- /Main Section -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
