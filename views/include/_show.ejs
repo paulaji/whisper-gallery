@@ -1,17 +1,23 @@
+<% for(var i = 0; i < users.length; i++) { %>
 <tr>
-  <td>1</td>
-  <td>Paul</td>
-  <td>Paul is planning to buy a Porsche 911</td>
-  <td>low</td>
-  <td>Active</td>
-  <td>
-    <a href="/update-user" class="btn border-shadow update"
-      ><span class="text-gradient"
-        ><i class="fa-solid fa-pen-to-square" style="color: #000"></i></span
-    ></a>
-    <a class="btn border-shadow delete"
-      ><span class="text-gradient"
-        ><i class="fa-solid fa-trash deldel" style="color: red"></i></span
-    ></a>
-  </td>
+  <td><%= i + 1%></td>
+  <td><%= users[i].name%></td>
+  <td><%= users[i].whisper%></td>
+  <td><%= users[i].confidence%></td>
+  <!-- <td><%= users[i].status%></td> -->
+  <pre>
+    <td>
+      <a
+        href="/update-user?id=<%= users[i]._id%>"
+        class="btn border-shadow update"
+        ><span class="text-gradient"
+          ><i class="fa-solid fa-pen-to-square" style="color: #000"></i></span
+      ></a>
+      <a class="btn border-shadow delete" data-id=<%= users[i]._id%>
+        ><span class="text-gradient"
+          ><i class="fa-solid fa-trash deldel" style="color: red"></i></span
+      ></a>
+    </td>
+  </pre>
 </tr>
+<% } %>
