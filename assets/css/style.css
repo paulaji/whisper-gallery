@@ -114,9 +114,10 @@ table {
 }
 
 .table td > a.btn {
-  padding: 0.3em 1em;
-  font-size: 1.1em;
-  margin: 0 0.2em;
+  /* padding: 0.2em 0.2em; */
+  font-size: 1.2em;
+  margin: 1em 1em;
+  border: 0px dashed #000;
 }
 
 .table tr:hover {
